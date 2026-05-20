@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enterprise_catalog generated_at="2024-03-15T08:30:00Z" status="archived" version="4.2">
+    <metadata>
+        <organization>Global Nexus Logistics</organization>
+        <department>Supply Chain &amp; Asset Management</department>
+        <data_owner>system_backup_user</data_owner>
+        <encryption>AES-256-CBC</encryption>
+    </metadata>
+    <infrastructure_nodes>
+        <node id="NODE-001" type="Primary Data Center">
+            <location region="us-east-1" zone="us-east-1a">Northern Virginia, USA</location>
+            <hardware>
+                <server_model>Dell PowerEdge R740</server_model>
+                <cpu_cores>64</cpu_cores>
+                <ram_gb>512</ram_gb>
+                <storage_type>NVMe SSD</storage_type>
+                <capacity_tb>48.5</capacity_tb>
+            </hardware>
+            <network>
+                <ip_address type="IPv4">192.168.10.15</ip_address>
+                <subnet_mask>255.255.255.0</subnet_mask>
+                <gateway>192.168.10.1</gateway>
+                <bandwidth_capacity>10 Gbps</bandwidth_capacity>
+            </network>
+            <software_stack>
+                <os_version>Ubuntu Server 20.04 LTS</os_version>
+                <kernel_version>5.4.0-144-generic</kernel_version>
+                <runtime environment="Production">Java SE 11.0.18</runtime>
+                <database_engine version="12.14">PostgreSQL</database_engine>
+            </software_stack>
+            <operational_metrics>
+                <uptime_percentage>99.92</uptime_percentage>
+                <average_load_24h>4.12</average_load_24h>
+                <last_maintenance_date>2023-11-12</last_maintenance_date>
+            </operational_metrics>
+        </node>
+        <node id="NODE-002" type="Disaster Recovery Site">
+            <location region="us-west-2" zone="us-west-2b">Oregon, USA</location>
+            <hardware>
+                <server_model>Dell PowerEdge R730</server_model>
+                <cpu_cores>32</cpu_cores>
+                <ram_gb>256</ram_gb>
+                <storage_type>SATA HDD</storage_type>
+                <capacity_tb>120.0</capacity_tb>
+            </hardware>
+            <network>
+                <ip_address type="IPv4">10.0.50.22</ip_address>
+                <subnet_mask>255.255.0.0</subnet_mask>
+                <gateway>10.0.0.1</gateway>
+                <bandwidth_capacity>1 Gbps</bandwidth_capacity>
+            </network>
+            <software_stack>
+                <os_version>Ubuntu Server 18.04 LTS</os_version>
+                <kernel_version>4.15.0-213-generic</kernel_version>
+                <runtime environment="Failover">Java SE 8.0.362</runtime>
+                <database_engine version="10.22">PostgreSQL</database_engine>
+            </software_stack>
+            <operational_metrics>
+                <uptime_percentage>98.45</uptime_percentage>
+                <average_load_24h>0.45</average_load_24h>
+                <last_maintenance_date>2023-08-05</last_maintenance_date>
+            </operational_metrics>
+        </node>
+    </infrastructure_nodes>
+    <product_inventory>
+        <category name="Industrial Automation Systems">
+            <item sku="NEX-AUTO-401A" availability="In Stock">
+                <name>Programmable Logic Controller (PLC) Elite v4</name>
+                <description>High-performance automated logical controller for heavy manufacturing lines.</description>
+                <pricing currency="USD">
+                    <base_price>2450.00</base_price>
+                    <bulk_discount threshold="10" percentage="12.5"/>
+                    <tax_category>Standard Industrial</tax_category>
+                </pricing>
+                <dimensions unit="cm">
+                    <height>14.5</height>
+                    <width>22.0</width>
+                    <depth>11.2</depth>
+                    <weight unit="kg">3.4</weight>
+                </dimensions>
+                <compliance_certifications>
+                    <cert>CE-Mark</cert>
+                    <cert>UL-61010</cert>
+                    <cert>RoHS-Compliant</cert>
+                </compliance_certifications>
+                <supplier_info>
+                    <vendor_id>VEND-881</vendor_id>
+                    <vendor_name>Automation Dynamics Corp</vendor_name>
+                    <lead_time_days>14</lead_time_days>
+                </supplier_info>
+            </item>
+            <item sku="NEX-SENS-702B" availability="Low Stock">
+                <name>Opto-Isolated Multi-Sensor Array</name>
+                <description>Thermal and vibration tracking array with legacy analog loop interfaces.</description>
+                <pricing currency="USD">
+                    <base_price>899.99</base_price>
+                    <bulk_discount threshold="5" percentage="5.0"/>
+                    <tax_category>Precision Components</tax_category>
+                </pricing>
+                <dimensions unit="cm">
+                    <height>5.2</height>
+                    <width>8.5</width>
+                    <depth>4.1</depth>
+                    <weight unit="kg">0.65</weight>
+                </dimensions>
+                <compliance_certifications>
+                    <cert>CE-Mark</cert>
+                    <cert>IP65-Rating</cert>
+                </compliance_certifications>
+                <supplier_info>
+                    <vendor_id>VEND-402</vendor_id>
+                    <vendor_name>Sensotech Sensors International</vendor_name>
+                    <lead_time_days>30</lead_time_days>
+                </supplier_info>
+            </item>
+        </category>
+    </product_inventory>
+</enterprise_catalog>

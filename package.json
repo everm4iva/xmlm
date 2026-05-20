@@ -1,0 +1,20 @@
+{
+  "name": "xmlm",
+  "version": "1.0.0",
+  "description": "Simple terminal tool that reads one or more .xml files, summaries, fixes or compares them in natural language.",
+  "license": "./LICENSE",
+  "author": "everm4iva",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "model": "ollama create xmlm -f ./model/xmlm",
+    "alive": "ollama run xmlm:latest"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "node-fetch": "^2.7.0",
+    "ora": "^9.4.0"
+  }
+}
