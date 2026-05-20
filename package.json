@@ -1,7 +1,7 @@
 {
   "name": "xmlm",
   "version": "1.0.0",
-  "description": "Simple terminal tool that reads one or more .xml files, summaries, fixes or compares them in natural language.",
+  "description": "Simple terminal tool that reads one or more .xml files, summarizes, fixes or compares them in natural language.",
   "license": "./LICENSE",
   "author": "everm4iva",
   "type": "commonjs",
